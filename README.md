@@ -79,4 +79,4 @@ https://stackoverflow.com/questions/32780315/could-not-find-a-part-of-the-path-b
 ## Postman e Swagger
 
 Na pasta assets/ há uma versão da Collection do Postman que fizemos para a execução dos testes caso preciso. Também é possível acessar o Swagger a partir do link
-da api local ("https://localhost:<port>/swagger").
+da api local ["https://localhost:[port]/swagger"].
