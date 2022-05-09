@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "097439a6-2b96-46d0-9562-523e922e0a90",
+		"name": "Software Engineering Development",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InstrumentoMusical",
+			"item": [
+				{
+					"name": "Buscar Todos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{im}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Teclado Workstation Kross\",\r\n    \"Description\": \"Teclado Workstation Kross 2 61 Korg - Preto (BK)\",\r\n    \"informations\": \"Mais funções, mais sons, mais possibilidades! Uma plataforma de ponta com ainda mais funcionalidade. O sintetizador workstation que faz tudo. Uma rica seleção de mais de 1000 presets aprimorados. Memória de expansão PCM integrada de 128MB e bibliotecas opcionais suportadas. O rico e expressivo poder do mecanismo de som EDS-i e uma ampla seleção de efeitos com 134 tipos.\",\r\n    \"instrumentType\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{im}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{im}}/8bc5ddb9-2fd3-4e7b-906b-0e94c399084b",
+							"host": [
+								"{{im}}"
+							],
+							"path": [
+								"8bc5ddb9-2fd3-4e7b-906b-0e94c399084b"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": \"65dde505-b46d-4ffc-bb85-b7e7c3f28f07\",\r\n    \"Name\": \"Bateria Mapex\",\r\n    \"Description\": \"Bateria Mapex Mars MA528SF GW Mapex\",\r\n    \"informations\": \"Mars Crossover – Shell Pack 5 peças (kit de tambores), Bumbo 22X18, Surdo de chão 14X12, Surdo de chão 16X14, Tom 12X8, e Caixa 14 x 6.5.\",\r\n    \"instrumentType\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{im}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{im}}/383a42fe-9e28-4e56-b1b4-8d995accb84a"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
